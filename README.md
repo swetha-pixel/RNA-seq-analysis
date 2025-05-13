@@ -18,16 +18,20 @@ Visualization: Visualize results with plots such as volcano plots, heatmaps, and
 #RNA-Seq Data Download and Environment Setup
 This section will guide you through setting up the environment and downloading RNA-seq data using SRR IDs.
 
-1. Set up your environment using Mamba
-To create a clean environment for RNA-seq analysis:
-# Create a new environment using Mamba (substitute "rna_env" with your preferred environment name)
-mamba create -n rna_env python=3.8
+1. 1. Set up your environment 
+This pipeline uses Mamba as the environment manager, though Conda can also be used.
 
-# Activate the environment
+## 🔧 Environment Setup (Mamba)
+
+Create and activate a new environment:
+
+```bash
+mamba create -n rna_env python=3.8
 mamba activate rna_env
 
-# Create a new environment using Mamba (substitute "rna_env" with your preferred environment name)
-mamba create -n rna_env python=3.8
+Install required tools:
+mamba install -c bioconda sra-tools fastqc trimmomatic star samtools subread
+mamba install -c conda-forge r-base
+mamba install -c bioconda bioconductor-deseq2
+mamba install -c conda-forge r-tidyverse
 
-# Activate the environment
-mamba activate rna_env
