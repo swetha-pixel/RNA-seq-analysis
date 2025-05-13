@@ -15,14 +15,17 @@ Differential Gene Expression (DGE) Analysis: Perform DGE analysis using DESeq2 o
 
 Visualization: Visualize results with plots such as volcano plots, heatmaps, and PCA to explore gene expression patterns.
 
-RNA-Seq Data Download and Environment Setup
+#RNA-Seq Data Download and Environment Setup
 This section will guide you through setting up the environment and downloading RNA-seq data using SRR IDs.
+
 1. Set up your environment using Mamba
 To create a clean environment for RNA-seq analysis:
+# Create a new environment using Mamba (substitute "rna_env" with your preferred environment name)
+mamba create -n rna_env python=3.8
 
-bash
-Copy
-Edit
+# Activate the environment
+mamba activate rna_env
+
 # Create a new environment using Mamba (substitute "rna_env" with your preferred environment name)
 mamba create -n rna_env python=3.8
 
