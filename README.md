@@ -261,24 +261,7 @@ The primary input for DESeq2 is the raw count matrix (FeatureCounts_Mod.txt) wit
 Row names as gene IDs
 Columns representing sample-wise raw counts
 
-# Install BiocManager if not already installed
-install.packages("BiocManager")
-
-# Install Bioconductor packages
-BiocManager::install("SummarizedExperiment")
-BiocManager::install("DESeq2")
-BiocManager::install("EnhancedVolcano")
-BiocManager::install("apeglm")
-BiocManager::install("genefilter")
-BiocManager::install("ggplot2", force = TRUE)
-
-# Install CRAN packages
-install.packages("gtable")
-install.packages("stringi")
-install.packages("tidyverse")
-install.packages("pheatmap")
-install.packages("PoiClaClu")
-install.packages("readxl")
+<pre> ```r # Install BiocManager if not already installed install.packages("BiocManager") # Install Bioconductor packages BiocManager::install("SummarizedExperiment") BiocManager::install("DESeq2") BiocManager::install("EnhancedVolcano") BiocManager::install("apeglm") BiocManager::install("genefilter") BiocManager::install("ggplot2", force = TRUE) # Install CRAN packages install.packages("gtable") install.packages("stringi") install.packages("tidyverse") install.packages("pheatmap") install.packages("PoiClaClu") install.packages("readxl") ``` </pre>
 
 
 
