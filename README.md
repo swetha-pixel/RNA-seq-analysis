@@ -261,31 +261,25 @@ The primary input for DESeq2 is the raw count matrix (FeatureCounts_Mod.txt) wit
 Row names as gene IDs
 Columns representing sample-wise raw counts
 
-Install the necessary packages before starting:
-#RNASeq analysis in R
-#Install BiocManager if not already installed #install-packages ("BiocManager")
-#Install DESEq2 and other packages
-#BiocManager:: install ("SummarizedExperiment")
-#BiocManager: :install("DESeq2")
-#install. packages ("gtable")
-#install. packages("stringi")
-#install.packages("tidyverse")
-#BiocManager: : install"EnhancedVolcano")
-#BiocManager:: install("apeglm'")
-#install. packages ("pheatmap")
-#install.packages ("PoiClaClu")
-#BiocManager: : install("ggplot", force= TRUE)
-#BiocManager:: install("genefilter")
-#Load required libraries
-library(DESeq2)
-library (tidyverse)
-library(dplyr)
-library(EnhancedVolcano)
-library (pheatmap)
-library(apeglm)
-library(RColorBrewer)
-library(ggplot)
-library(readx])
+# Install BiocManager if not already installed
+install.packages("BiocManager")
+
+# Install Bioconductor packages
+BiocManager::install("SummarizedExperiment")
+BiocManager::install("DESeq2")
+BiocManager::install("EnhancedVolcano")
+BiocManager::install("apeglm")
+BiocManager::install("genefilter")
+BiocManager::install("ggplot2", force = TRUE)
+
+# Install CRAN packages
+install.packages("gtable")
+install.packages("stringi")
+install.packages("tidyverse")
+install.packages("pheatmap")
+install.packages("PoiClaClu")
+install.packages("readxl")
+
 
 
 ```bash
